@@ -1,0 +1,6 @@
+{
+  "name": "de.fraunhofer.iwu.linkedfactory.rfid",
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker" : null
+  }
+}
