@@ -1,5 +1,5 @@
 {
-  "name": "de.fraunhofer.iwu.linkedfactory.rfid",
+  "name": "net.enilink.beginner.web",
   "dependencies": {
     "eonasdan-bootstrap-datetimepicker" : null
   }
