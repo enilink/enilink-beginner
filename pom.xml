@@ -69,7 +69,6 @@
 										<artifactId>maven-dependency-plugin</artifactId>
 										<versionRange>[0.0,)</versionRange>
 										<goals>
-											<goal>copy-dependencies</goal>
 											<goal>unpack-dependencies</goal>
 										</goals>
 									</pluginExecutionFilter>
