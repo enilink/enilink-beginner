@@ -88,7 +88,7 @@
 		<repository>
 			<id>enilink</id>
 			<layout>p2</layout>
-			<url>http://platform.enilink.net/updates/latest/</url>
+			<url>https://dl.bintray.com/enilink/updates/enilink/1.2.1/</url>
 		</repository>
 	</repositories>
 
