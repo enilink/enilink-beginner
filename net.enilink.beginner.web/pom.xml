@@ -33,8 +33,10 @@
 							<goal>unpack-dependencies</goal>
 						</goals>
 						<configuration>
-						<outputDirectory>${project.build.directory}/classes/</outputDirectory>
+							<outputDirectory>.</outputDirectory>
 							<includeScope>runtime</includeScope>
+							<includes>META-INF/resources/webjars/**/*</includes>
+							<overWriteIfNewer>true</overWriteIfNewer>
 						</configuration>
 					</execution>
 				</executions>
