@@ -24,20 +24,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.10</version>
 				<executions>
 					<execution>
-						<id>embed-libraries</id>
+						<id>embed-webjars</id>
 						<phase>compile</phase>
-						<goals>
-							<goal>unpack-dependencies</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>.</outputDirectory>
-							<includeScope>runtime</includeScope>
-							<includes>META-INF/resources/webjars/**/*</includes>
-							<overWriteIfNewer>true</overWriteIfNewer>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
