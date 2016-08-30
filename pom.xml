@@ -124,7 +124,7 @@
 		<repository>
 			<id>enilink</id>
 			<layout>p2</layout>
-			<url>https://dl.bintray.com/enilink/updates/enilink/1.2.1/</url>
+			<url>https://dl.bintray.com/enilink/updates/enilink/1.2.3/</url>
 		</repository>
 	</repositories>
 
