@@ -3,7 +3,7 @@ package net.enilink.beginner.web.snippet.beginner
 import scala.xml.Elem
 import scala.xml.NodeSeq
 import scala.xml.NodeSeq.seqToNodeSeq
-import net.enilink.lift.snippet.ParamsHelper
+import net.enilink.platform.lift.snippet.ParamsHelper
 import net.liftweb.common.Full
 import net.liftweb.http.S
 import net.liftweb.util.Helpers.appendParams

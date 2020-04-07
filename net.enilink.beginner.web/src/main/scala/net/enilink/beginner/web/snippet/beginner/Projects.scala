@@ -3,9 +3,9 @@ package net.enilink.beginner.web.snippet.beginner
 import scala.collection.immutable.Nil
 import net.enilink.beginner.web.util.SnippetHelpers._
 import net.enilink.komma.core.IEntity
-import net.enilink.lift.util.AjaxHelpers
-import net.enilink.lift.util.CurrentContext
-import net.enilink.lift.util.Globals
+import net.enilink.platform.lift.util.AjaxHelpers
+import net.enilink.platform.lift.util.CurrentContext
+import net.enilink.platform.lift.util.Globals
 import net.liftweb.common.Empty
 import net.liftweb.common.Full
 import net.liftweb.http.S

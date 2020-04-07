@@ -3,6 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>net.enilink.beginner</groupId>
 		<artifactId>beginner-parent</artifactId>
@@ -13,14 +14,21 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi.core</artifactId>
+			<version>7.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>d3js</artifactId>
 			<version>3.5.12</version>
 		</dependency>
 		<dependency>
 			<groupId>net.enilink.platform</groupId>
-			<artifactId>net.enilink.platform.lift</artifactId>
+			<artifactId>net.enilink.platform.feature</artifactId>
 			<version>${enilink.version}</version>
+			<type>pom</type>
 		</dependency>
 	</dependencies>
 

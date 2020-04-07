@@ -4,8 +4,8 @@ import java.util.GregorianCalendar
 import net.enilink.beginner.web.util.SnippetHelpers._
 import javax.xml.datatype.DatatypeFactory
 import net.enilink.komma.em.concepts.IResource
-import net.enilink.lift.util.CurrentContext
-import net.enilink.lift.util.Globals
+import net.enilink.platform.lift.util.CurrentContext
+import net.enilink.platform.lift.util.Globals
 import net.liftweb.common.Empty
 import net.liftweb.common.Full
 import net.liftweb.http.S

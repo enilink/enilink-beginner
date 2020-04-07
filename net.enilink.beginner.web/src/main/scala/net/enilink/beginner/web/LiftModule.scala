@@ -1,19 +1,18 @@
 package net.enilink.beginner.web
 
+
+
 import scala.language.implicitConversions
-import net.enilink.lift.sitemap.Menus
-import net.enilink.lift.sitemap.Menus._
-import net.liftweb.http.S
-import net.liftweb.sitemap.LocPath.stringToLocPath
-import net.liftweb.sitemap.Menu
-import net.liftweb.sitemap.SiteMap
-import net.enilink.lift.util.Globals
-import net.liftweb.common.Full
+
 import net.enilink.komma.core.URIs
-import java.util.HashMap
+import net.enilink.platform.lift.sitemap.HideIfInactive
+import net.enilink.platform.lift.sitemap.Menus
+import net.enilink.platform.lift.sitemap.Menus._
+import net.enilink.platform.lift.util.Globals
+import net.liftweb.common.Full
 import net.liftweb.http.Req
-import net.liftweb.http.LiftRules
-import net.enilink.lift.sitemap.HideIfInactive
+import net.liftweb.http.S
+import net.liftweb.sitemap.SiteMap
 
 /**
  * This is the main class of the web module. It sets up and tears down the application.

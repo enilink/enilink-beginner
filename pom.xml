@@ -14,8 +14,8 @@
 		<scala.version>2.11.1</scala.version>
 
 		<bnd.version>4.3.1</bnd.version>
-		<karaf.tooling.version>4.3.0.RC1</karaf.tooling.version>
 	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -28,8 +28,22 @@
 				<executions>
 					<execution>
 						<goals>
+							<goal>add-source</goal>
 							<goal>compile</goal>
 							<goal>testCompile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>bnd-process</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -57,7 +71,9 @@
 								<goal>unpack-dependencies</goal>
 							</goals>
 							<configuration>
-								<outputDirectory>.</outputDirectory>
+								<includeGroupIds>org.webjars, org.webjars.bower,
+									org.webjars.npm</includeGroupIds>
+								<outputDirectory>${project.build.outputDirectory}</outputDirectory>
 								<includeScope>runtime</includeScope>
 								<includes>META-INF/resources/webjars/**</includes>
 								<excludes>**/src/**</excludes>
@@ -74,7 +90,7 @@
 								<excludeGroupIds>org.webjars, org.webjars.bower,
 									org.webjars.npm</excludeGroupIds>
 								<stripVersion>true</stripVersion>
-								<outputDirectory>lib/</outputDirectory>
+								<outputDirectory>${project.build.outputDirectory}/lib</outputDirectory>
 								<includeScope>runtime</includeScope>
 							</configuration>
 						</execution>
