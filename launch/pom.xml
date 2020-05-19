@@ -93,4 +93,18 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>efxclipse-releases</id>
+			<url>http://maven.bestsolution.at/efxclipse-releases/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>efxclipse-snapshots</id>
+			<url>http://maven.bestsolution.at/efxclipse-snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
