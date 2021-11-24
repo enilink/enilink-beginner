@@ -1,20 +1,18 @@
 package net.enilink.beginner.web.snippet.beginner
 
-import java.util.GregorianCalendar
+import net.enilink.beginner.web.util.DCTERMS
 import net.enilink.beginner.web.util.SnippetHelpers._
-import javax.xml.datatype.DatatypeFactory
+import net.enilink.komma.core.URIs
 import net.enilink.komma.em.concepts.IResource
-import net.enilink.platform.lift.util.CurrentContext
-import net.enilink.platform.lift.util.Globals
-import net.liftweb.common.Empty
-import net.liftweb.common.Full
-import net.liftweb.http.S
-import net.liftweb.http.SHtml
+import net.enilink.platform.lift.util.{CurrentContext, Globals}
+import net.liftweb.common.{Empty, Full}
+import net.liftweb.http.{S, SHtml}
 import net.liftweb.http.js.JsCmds
 import net.liftweb.http.js.JsCmds.Run
-import net.liftweb.util.Helpers.strToCssBindPromoter
-import net.enilink.komma.core.URIs
-import net.enilink.beginner.web.util.DCTERMS
+import net.liftweb.util.Helpers._
+
+import java.util.GregorianCalendar
+import javax.xml.datatype.DatatypeFactory
 
 class Experiments {
   def create = SHtml.hidden(() => {

@@ -1,29 +1,22 @@
 package net.enilink.beginner.web.snippet.beginner
 
-import scala.collection.immutable.Nil
-import net.enilink.beginner.web.util.SnippetHelpers._
-import net.enilink.komma.core.IEntity
-import net.enilink.platform.lift.util.AjaxHelpers
-import net.enilink.platform.lift.util.CurrentContext
-import net.enilink.platform.lift.util.Globals
-import net.liftweb.common.Empty
-import net.liftweb.common.Full
-import net.liftweb.http.S
-import net.liftweb.http.SHtml
-import net.liftweb.http.js.JsCmd
-import net.liftweb.http.js.JsCmd.unitToJsCmd
-import net.liftweb.http.js.JsCmds.Noop
-import net.liftweb.http.js.JsCmds.Run
-import net.liftweb.util.ClearNodes
-import net.liftweb.util.Helpers.strToCssBindPromoter
-import net.enilink.vocab.rdfs.Class
-import net.enilink.vocab.rdf.RDF
-import javax.xml.datatype.DatatypeFactory
-import java.util.GregorianCalendar
-import net.enilink.komma.model.IModel
-import net.enilink.komma.core.Statement
 import net.enilink.beginner.web.util.DCTERMS
+import net.enilink.beginner.web.util.SnippetHelpers._
+import net.enilink.komma.core.{IEntity, Statement}
+import net.enilink.komma.model.IModel
+import net.enilink.platform.lift.util.{AjaxHelpers, CurrentContext, Globals}
 import net.enilink.vocab.foaf.FOAF
+import net.enilink.vocab.rdf.RDF
+import net.liftweb.common.{Empty, Full}
+import net.liftweb.http.{S, SHtml}
+import net.liftweb.http.js.JsCmd
+import net.liftweb.http.js.JsCmds.{Noop, Run}
+import net.liftweb.util.ClearNodes
+import net.liftweb.util.Helpers._
+
+import java.util.GregorianCalendar
+import javax.xml.datatype.DatatypeFactory
+import scala.collection.immutable.Nil
 
 class Projects {
   /**
