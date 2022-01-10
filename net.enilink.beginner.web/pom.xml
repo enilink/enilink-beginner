@@ -30,6 +30,11 @@
 			<version>${enilink.version}</version>
 			<type>pom</type>
 		</dependency>
+		<dependency>
+			<groupId>net.enilink.platform</groupId>
+			<artifactId>net.enilink.platform.ldp</artifactId>
+			<version>${enilink.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
