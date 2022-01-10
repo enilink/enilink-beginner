@@ -3,15 +3,13 @@ package net.enilink.beginner.web
 
 
 import scala.language.implicitConversions
-
 import net.enilink.komma.core.URIs
 import net.enilink.platform.lift.sitemap.HideIfInactive
 import net.enilink.platform.lift.sitemap.Menus
 import net.enilink.platform.lift.sitemap.Menus._
 import net.enilink.platform.lift.util.Globals
 import net.liftweb.common.Full
-import net.liftweb.http.Req
-import net.liftweb.http.S
+import net.liftweb.http.{LiftRules, RedirectResponse, Req, S}
 import net.liftweb.sitemap.SiteMap
 
 /**
@@ -54,7 +52,22 @@ class LiftModule {
     Globals.contextModelRules.prepend {
       case Req(`app` :: _, _, _) if !S.param("model").isDefined => Full(DEFAULT_MODEL_URI)
     }
+    // add DOM LDP service
+    LiftRules.dispatch.append(LDPServiceExample)
   }
+
+//  def boot {
+//    // redirect to index
+//    LiftRules.statelessDispatch.prepend {
+//      case Req(`app` :: Nil, _, _) => {
+//        () => Full(RedirectResponse(s"/$app/"))
+//      }
+//    }
+//
+//    // add DOM LDP service
+//    LiftRules.dispatch.append(LDPServiceExample)
+//  }
+
 
   def shutdown {
   }

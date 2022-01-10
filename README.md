@@ -10,6 +10,7 @@ A simple beginner project for eniLINK web applications.
 * run `mvn test -Pconfigure -DskipTests` to initialize or update a launch configuration
 * run `mvn test` to (re-)start the eniLINK platform
 * The application should now be available at: [http://localhost:8080/beginner/](http://localhost:8080/beginner/)
+* The LDP service (with default configuration) should be available at:  [http://localhost:8080/ldp/](http://localhost:8080/ldp/)
 
 ## Developing
 * The project can be developed with any IDE supporting Java and Scala projects
